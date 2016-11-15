@@ -5,7 +5,7 @@ zabbix-dnsbl-iprange is based on :
 
 https://zabbix.tips/are-your-servers-blacklisted/
 
-##### Requirements:
+###### Requirements:
 
 CentOS/RHEL
 # yum install bind-utils
@@ -13,7 +13,7 @@ CentOS/RHEL
 Debian/Ubuntu
 # apt-get install dnsutils
 
-##### Instructions:
+###### Instructions:
 
 Copy “externalscripts/*” to your Zabbix Servers and place it in the correct folder “/usr/lib/zabbix/externalscripts” *
 
@@ -21,10 +21,12 @@ Copy “externalscripts/*” to your Zabbix Servers and place it in the correct 
 
 Make the script executable: chmod +x /usr/lib/zabbix/externalscripts/*.sh
 
-Create the following value map (Administration -> General -> Value mapping: Create value map)
-Name: IP Blacklist
-0 -> Not listed
-1 -> Listed
+Create the following value map:
+(Administration -> General -> Value mapping: Create value map)
+
+  Name: IP Blacklist
+* 0 -> Not listed
+* 1 -> Listed
 
 Import the template.
 

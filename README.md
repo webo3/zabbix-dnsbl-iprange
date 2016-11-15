@@ -8,10 +8,10 @@ https://zabbix.tips/are-your-servers-blacklisted/
 ###### Requirements:
 
 CentOS/RHEL
-# yum install bind-utils
+yum install bind-utils
 
 Debian/Ubuntu
-# apt-get install dnsutils
+apt-get install dnsutils
 
 ###### Instructions:
 
